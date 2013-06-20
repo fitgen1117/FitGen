@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewWorkout" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/prompt_new_workout_2"
+        android:textSize="30sp" 
+    	android:id="@+id/tvNewHeader" 
+    	android:layout_marginTop="48dp"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_new_workout"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textSize="20sp" 
+		android:id="@+id/tvNew" />
+    
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:text="@string/button_mass" 
+        android:id="@+id/bMass"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:text="@string/button_general_strength" 
+        android:id="@+id/bStrength"/>
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:text="@string/button_weight_loss" 
+        android:id="@+id/bWeightLoss"/>
+
+</LinearLayout>

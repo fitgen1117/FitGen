@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewWorkout" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_num"
+        android:textSize="30sp" 
+    	android:id="@+id/tvNumHeader" 
+    	android:layout_marginTop="25dp"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_num_workout"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:textSize="20sp" 
+		android:id="@+id/tvNum" />
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/num_two" 
+        android:id="@+id/b2"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/num_three" 
+        android:id="@+id/b3"/>
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/num_four" 
+        android:id="@+id/b4"/>
+    
+     <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/num_five" 
+        android:id="@+id/b5"/>
+
+</LinearLayout>

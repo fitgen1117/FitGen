@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FitGen</string>
+    <string name="button_new_workout">New Workout</string>
+    <string name="button_existing_workout">My Workouts</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_choose_workout_goal">Choose Your Goal</string>
+    <string name="text_welcome">Choose an option to get started!</string>
+    <string name="title_activity_new_workout">NewWorkout</string>
+    <string name="button_mass">Strength</string>
+    <string name="button_general_strength">General Fitness</string>
+    <string name="button_weight_loss">Weight Loss</string>
+    <string name="prompt_new_workout">What are you trying to accomplish?</string>
+    <string name="prompt_new_workout_2">Choose Your Workout Goal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_header">Welcome to FitGen!</string>
+    <string name="title_activity_mass__button">Mass_Button</string>
+    <string name="title_num_workout">Choose up to 5 days a week that you\'ll hit the gym</string>
+    <string name="title_num">Workout Days</string>
+    <string name="num_two">2</string>
+    <string name="num_three">3</string>
+    <string name="num_four">4</string>
+    <string name="num_five">5</string>
+    <string name="title_activity_general__strength__button">General_Strength_Button</string>
+    <string name="title_activity_weight__loss__button">Weight_Loss_Button</string>
+    <string name="title_five_by_five_2day">5x5 Workout (2 Day/Week)</string>
+    <string name="title_five_by_five_3day">5x5 Workout (3 Day/Week)</string>
+    <string name="week1">Week 1</string>
+    <string name="day_one">Day 1</string>
+    <string name="day_two">Day 2</string>
+    <string name="day_three">Day 3</string>
+    <string name="barbell_bench">Barbell Bench Press 5x5</string>
+    <string name="squat">Squat 5x5</string>
+    <string name="barbell_curl">Barbell Curl 5x5</string>
+    <string name="barbell_deadlift">Barbell Deadlift 5x5</string>
+    <string name="military_press">Military Press 5x5</string>
+    <string name="pull_up">Weighted Pull-Ups 5x5</string>
+    <string name="barbell_rows">Barbell Rows 5x5</string>
+    <string name="tricep_dip">Weighted Tricep Dip (3x12)</string>
+    <string name="calf_raise">Weighted Calf Raises (3x12)</string>
+    <string name="leg_raise">Weighted Leg Raises (3x12)</string>
+    <string name="repeat">Repeat Day 1 after a minimum of 48 hours rest</string>
+    <string name="instruct">Instructions</string>
+    <string name="fivexfive">First, find your max for each exercise in the workout. Once you have that weight, subtract 40 from it, and do that weight for the first set. For example, say your max bench press is 200 lbs. Your first set will be 160 lbs, then 170, 180, 190, and finally 200. The key to this type of training is upping the weight a little bit every week. Do the same weights for all of Week 1, and then add at least 5 lbs to your highest weight set for Week 2. Do this every week, and you will see gains very quickly.</string>
+    <string name="safe">REMEMBER: AlWAYS USE A SPOTTER FOR SAFETY!</string>
+    <string name="max">Input Max Weight</string>
+    <string name="start_workout">Get Started!</string>
+    <string name="week_one">Week One</string>
+    <string name="repeat_program"> After completing this four-week program, either start over or increase the number of days working out per week for maximum gains.</string>
+    <string name="monday">Monday</string>
+    <string name="sunday">Sunday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="button_go">Go!</string>
+    <string name="ok">OK</string>
+    <string name="error_day">Choose at least two days to work out</string>
+    <string name="sign_in_text">Please sign in using an option below</string>
+    <string name="gym_find">Gym Locator</string>
+      
+</resources>

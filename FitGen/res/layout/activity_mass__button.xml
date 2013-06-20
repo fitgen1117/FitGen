@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity = "left"
+    android:orientation="vertical"
+    tools:context=".NewWorkout" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_num"
+        android:textSize="30sp" 
+    	android:id="@+id/tvNumHeader" 
+    	android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_num_workout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textSize="20sp" 
+		android:id="@+id/tvNum" />
+    
+
+    <CheckBox
+        android:id="@+id/chkSunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sunday"
+        android:layout_marginTop="20dp" 
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked"/>
+ 
+    <CheckBox
+        android:id="@+id/chkMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/monday"
+        android:onClick="onCheckboxClicked" />
+ 
+    <CheckBox
+        android:id="@+id/chkTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tuesday"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked" />
+ 
+    <CheckBox
+        android:id="@+id/chkWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wednesday"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked" />
+ 
+    <CheckBox
+        android:id="@+id/chkThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thursday"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked"/>
+ 
+    <CheckBox
+        android:id="@+id/chkFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friday"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked" />
+    
+    <CheckBox
+        android:id="@+id/chkSaturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saturday"
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked" />
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_go" 
+        android:id="@+id/bGo"/>
+ 		
+</LinearLayout>

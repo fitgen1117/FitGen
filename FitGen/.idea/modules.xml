@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FitGen.iml" filepath="$PROJECT_DIR$/FitGen.iml" />
+      <module fileurl="file://$USER_HOME$/Android Development/adt-bundle-windows-x86_64-20130219/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" filepath="$USER_HOME$/Android Development/adt-bundle-windows-x86_64-20130219/sdk/extras/google/google_play_services/libproject/google-play-services_lib/google-play-services_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gridlayout_v7/gridlayout_v7.iml" filepath="$PROJECT_DIR$/../gridlayout_v7/gridlayout_v7.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -31,7 +31,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="48dp"
         android:onClick="PullExisting"
-        android:text="@string/common_signin_button_text_long" 
         android:id="@+id/sign_in_button"/>
 
        

@@ -127,6 +127,7 @@ public class GymLocator extends Activity implements LocationListener {
 		
 		
 		
+		
 		//build places query string
 		String placesSearchStr = "https://maps.googleapis.com/maps/api/place/nearbysearch/" +
 				"json?location="+lat+","+lng+

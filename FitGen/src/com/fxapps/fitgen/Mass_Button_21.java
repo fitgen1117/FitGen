@@ -1,35 +1,55 @@
 package com.fxapps.fitgen;
 
 import android.app.ActionBar;
+import android.app.ActionBar.Tab;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+
 
 public class Mass_Button_21 extends Activity {
 	@ Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_mass__button_21);
+		setContentView(R.layout.fragment_container);
 		
-		ActionBar actionBar = getActionBar();
-	    actionBar.setDisplayHomeAsUpEnabled(true);
-		
-		Button bStart = (Button) findViewById(R.id.bStart);
-		bStart.setOnClickListener(new OnClickListener() {
-					
-			public void onClick(View v) {
-						
-				Intent intent = new Intent(v.getContext(), Mass_Button_22.class);
-				startActivityForResult(intent,0);
-			}
+		ActionBar actionbar = getActionBar();
+	    actionbar.setDisplayHomeAsUpEnabled(true);
+	
+      //Tell the ActionBar we want to use Tabs.
+        actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+      //initiating both tabs and set text to it.
+        ActionBar.Tab InstructTab = actionbar.newTab().setText("Instructions");
+        ActionBar.Tab Day1Tab = actionbar.newTab().setText("Day1");
+        ActionBar.Tab Day2Tab = actionbar.newTab().setText("Day2");
+ 
+     //create the two fragments we want to use for display content
+        Fragment InstructFragment = new Mass_Button_2();
+        Fragment Day1Fragment = new Mass_Button_22();
+        Fragment Day2Fragment = new Mass_Button_23();
+ 
+    //set the Tab listener. Now we can listen for clicks.
+        InstructTab.setTabListener(new TabListener(InstructFragment));
+        Day1Tab.setTabListener(new TabListener(Day1Fragment));
+        Day2Tab.setTabListener(new TabListener(Day2Fragment));
+ 
+   //add the two tabs to the actionbar
+        actionbar.addTab(InstructTab);
+        actionbar.addTab(Day1Tab);
+        actionbar.addTab(Day2Tab);
+    }
+	
+	  @Override
+	    protected void onSaveInstanceState(Bundle outState) {
+	        super.onSaveInstanceState(outState);
+	        outState.putInt("tab", getActionBar().getSelectedNavigationIndex());
+	    }
 
-		});
-	}
+	
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -37,6 +57,7 @@ public class Mass_Button_21 extends Activity {
 		getMenuInflater().inflate(R.menu.mass__button, menu);
 		return true;
 	}
+		
 
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
@@ -48,7 +69,32 @@ public class Mass_Button_21 extends Activity {
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
+	    
+	  }
 	}
-}
+	
+	class TabListener implements android.app.ActionBar.TabListener{
+
+		public Fragment fragment;
+		 
+		public TabListener(Fragment fragment) {
+		this.fragment = fragment;
+		}
+		 
+		public void onTabReselected(Tab tab, FragmentTransaction ft) {
+		}
+		 
+		@Override
+		public void onTabSelected(Tab tab, FragmentTransaction ft) {
+		ft.replace(R.id.fragment_container, fragment);
+		}
+		 
+		@Override
+		public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+		ft.remove(fragment);
+		}
+		 
+		}
+	
 
 

@@ -17,8 +17,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		
-		
 		Button bNew = (Button) findViewById(R.id.bNew);
 		bNew.setOnClickListener(new OnClickListener() {
 				
@@ -30,6 +28,8 @@ public class MainActivity extends Activity {
 
 		});
 	}
+
+	   
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

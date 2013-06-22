@@ -4,23 +4,5 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <ExpandableListView
-        android:id="@+id/expandableListView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp" >
-        
-    </ExpandableListView>
-    
-    <TextView 
-        android:id="@+id/RepeatMessage"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="@string/repeat_program"
-        android:gravity="left"
-        android:textSize="20sp" />
-        
+  
 </LinearLayout>

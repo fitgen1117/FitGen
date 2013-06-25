@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fxapps.fitgen"
-    android:versionCode="8"
-    android:versionName="0.15 ALPHA" >
+    android:versionCode="9"
+    android:versionName="0.2 ALPHA" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
     
      <permission
@@ -40,12 +40,15 @@
         
         <activity
             android:name="com.fxapps.fitgen.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.fxapps.fitgen.Splash" >
         </activity>
         <activity android:name="com.fxapps.fitgen.SignIn" >
         </activity>

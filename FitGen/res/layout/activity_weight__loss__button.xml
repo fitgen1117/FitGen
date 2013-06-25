@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NewWorkout" >
+    tools:context=".NewWorkout"
+    android:background="@drawable/carbon" >
 
     <TextView
         android:layout_width="fill_parent"

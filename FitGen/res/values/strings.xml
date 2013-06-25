@@ -61,5 +61,8 @@
     <string name="error_day">Choose at least two days to work out</string>
     <string name="sign_in_text">Please sign in using an option below</string>
     <string name="gym_find">Gym Locator</string>
+    <string name="content">content</string>
+    <string name="tap_to_start">Tap the Logo to Start</string>
+    <string name="tagline">GENERATE A NEW YOU</string>
       
 </resources>

@@ -1,29 +1,16 @@
 package com.fxapps.fitgen;
 
-import android.app.ActionBar;
-import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.view.Menu;
-import android.widget.ExpandableListView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-public class Mass_Button_32 extends Activity {
-
-	ExpandableListView exv;
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_mass_button_32);
-		ActionBar actionBar = getActionBar();
-	    actionBar.setDisplayHomeAsUpEnabled(true);
-		exv = (ExpandableListView)findViewById(R.id.expandableListView2);
-		exv.setAdapter(new Mass_Button_33(this));
+public class Mass_Button_32 extends Fragment {
+	
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		   // Inflate the layout for this fragment
+		   return inflater.inflate(R.layout.activity_mass_button_32, container, false);
+		  }
 	}
-
-	public boolean onCreateOptionsMenu(Menu menu) {
-	// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-		
-		}
-	}
-
 

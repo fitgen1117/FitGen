@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/carbon"
     android:orientation="vertical" >
+    
 
     <ImageButton
         android:id="@+id/imageView1"
@@ -15,6 +16,8 @@
         android:contentDescription="@string/content"
         android:src="@drawable/logo_splash"
         android:background="@android:color/transparent" />
+    
+  
 
     <TextView
         android:layout_width="wrap_content"

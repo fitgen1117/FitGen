@@ -10,18 +10,19 @@ import android.widget.ImageButton;
 public class MainActivity extends Activity {
 	
 		ImageButton imageButton;
+ 
 	 
 		@Override
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.splash_main);
-	 
+			
 			addListenerOnImageButton();
 	 
 		}
 	 
 		public void addListenerOnImageButton() {
-	 
+			
 			imageButton = (ImageButton) findViewById(R.id.imageView1);
 	 
 			imageButton.setOnClickListener(new OnClickListener() {
@@ -30,6 +31,8 @@ public class MainActivity extends Activity {
 					
 					Intent intent = new Intent(v.getContext(), Splash.class);
 					startActivityForResult(intent,0);
+					
+					
 						}
 
 					});

@@ -27,7 +27,19 @@ public class Splash extends Activity {
 				}
 
 		});
+		
+		Button bCustom = (Button) findViewById(R.id.bCustom);
+		bCustom.setOnClickListener(new OnClickListener() {
+			
+			public void onClick (View v) {
+				
+				Intent intent = new Intent (v.getContext(), Custom_Button.class);
+				startActivityForResult(intent,0);
+			}
+		});
+		
 	}
+		
 
 	   
 	@Override

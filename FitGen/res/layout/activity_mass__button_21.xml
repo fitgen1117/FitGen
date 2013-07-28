@@ -1,44 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    	android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-    	android:orientation="vertical"
-    	android:background="@drawable/carbon" >
-    	
-    	<TextView
-                	android:layout_width="fill_parent"
-                	android:layout_height="wrap_content"
-                	android:layout_marginLeft="10dp"
-                	android:layout_marginRight="10dp"
-                	android:layout_marginTop="25dp"
-                	android:gravity="left"
-                	android:text="@string/instruct"
-                	android:textSize="25sp" 
-                	android:id="@+id/text1.1"
-                	android:textColor="@color/white" />
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
 
-            		<TextView
-                		android:layout_width="fill_parent"
-                		android:layout_height="wrap_content"
-                		android:layout_marginLeft="10dp"
-                		android:layout_marginTop="25dp"
-               	 		android:gravity="left"
-                		android:text="@string/fivexfive"
-                		android:textSize="15sp"
-                		android:id="@+id/text1.2"
-                		android:textColor="@color/white" />
-
-            		<TextView
-                		android:layout_width="fill_parent"
-               	 		android:layout_height="wrap_content"
-                		android:layout_marginLeft="10dp"
-               	 		android:layout_marginTop="25dp"
-                		android:gravity="left"
-                		android:text="@string/safe"
-                		android:textSize="15sp"
-                		android:id="@+id/text1.3"
-                		android:textColor="@color/white" />
-
-</LinearLayout>
-
-
+			<ListView android:id="@+id/listView"
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"/>
+             
+</RelativeLayout>
+	

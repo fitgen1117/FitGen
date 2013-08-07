@@ -4,7 +4,7 @@
     <string name="app_name">FitGen</string>
     <string name="button_new_workout">New Workout</string>
     <string name="button_existing_workout">My Workouts</string>
-    <string name="button_custom_workout">Custom Workout</string>
+    <string name="button_custom_workout">Add Exercise</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_choose_workout_goal">Choose Your Goal</string>
@@ -72,5 +72,6 @@
     <string name="exercise_disp"/>
     <string name="customInstruct">Enter an exercise and press the &quot;Add&quot; button to include it in the database</string>
     <string name="button_add_custom">Add</string>
+    <string name="music_player">Music</string>
       
 </resources>

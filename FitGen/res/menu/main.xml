@@ -6,9 +6,14 @@
         android:showAsAction="never"
         android:title="@string/action_settings"/>
     
-    <item 
+      <item 
         android:id="@+id/gym_find"
         android:title="@string/gym_find"
         android:showAsAction="ifRoom|withText"/>
+      
+      <item 
+          android:id="@+id/music"
+          android:title="@string/music_player"
+          android:showAsAction="ifRoom|withText"/>
 
 </menu>

@@ -143,12 +143,19 @@ public class Mass_Button extends Activity {
 		            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		            startActivity(intent);
 		            return true;
-		        default:
-		            return super.onOptionsItemSelected(item);
-		    }
+		            
+			        case R.id.music:
+			            Intent intent_music = new Intent(this, MusicPlayer.class);
+			            intent_music.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			            startActivity(intent_music);
+			            return true;
+			        default:
+			            return super.onOptionsItemSelected(item);
+			    }
+				};
 		
 }
-}
+
 
 
 

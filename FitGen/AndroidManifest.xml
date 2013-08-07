@@ -78,6 +78,10 @@
         </activity>
         <activity android:name="com.fxapps.fitgen.Custom_Button" >
         </activity>
+        <activity android:name="com.fxapps.fitgen.MusicPlayer" >
+        </activity>
+ 		<activity android:name=".PlayListActivity" />
     </application>
+   
 
 </manifest>

@@ -73,5 +73,10 @@
     <string name="customInstruct">Enter an exercise and press the &quot;Add&quot; button to include it in the database</string>
     <string name="button_add_custom">Add</string>
     <string name="music_player">Music</string>
+    <string-array name="chest_mass_array">
+        <item>Barbell Bench Press</item>
+        <item>Dumbbell Bench Press</item>
+        <item>Dumbbell Chest Fly</item>
+    </string-array>
       
 </resources>

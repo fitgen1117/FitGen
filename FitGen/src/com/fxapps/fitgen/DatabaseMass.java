@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DatabaseMass extends SQLiteOpenHelper {
 	
 	static final String dbName = "ExerciseDB";
 	static final String chestTable = "Chest Exercises";
@@ -34,7 +34,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	
 	
 
-public DatabaseHelper(Context context) {
+public DatabaseMass(Context context) {
 	super(context, dbName, null, 33);
 }
 

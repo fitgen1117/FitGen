@@ -78,5 +78,17 @@
         <item>Dumbbell Bench Press</item>
         <item>Dumbbell Chest Fly</item>
     </string-array>
+    <string name="exercise">Exercise Name</string>
+    <string name="set">Sets</string>
+    <string name="btn_update">Add Exercise</string>
+    <string name="view">View</string>
+    <string name="dbAddHeader">Update Exercise Database</string>
+    <string name="addExercise">Add Exercise</string>
+    <string name="hintName">Exercise Name,  e.g. &quot;Pull-Up&quot;</string>
+    <string name="hintSetReps">Example: 3 x 10</string>
+    <string name="exercises">Exercises</string>
+    <string name="hintSet"># Sets</string>
+    <string name="hintRep"># Repetitions</string>
+    <string name="placeholder_db">get info from db</string>
       
 </resources>

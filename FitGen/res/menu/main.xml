@@ -12,8 +12,8 @@
         android:showAsAction="ifRoom|withText"/>
       
       <item 
-          android:id="@+id/music"
-          android:title="@string/music_player"
+          android:id="@+id/addExercise"
+          android:title="@string/addExercise"
           android:showAsAction="ifRoom|withText"/>
 
 </menu>

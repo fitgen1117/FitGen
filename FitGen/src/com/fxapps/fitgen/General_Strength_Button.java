@@ -144,10 +144,10 @@ public class General_Strength_Button extends Activity {
 		            startActivity(intent);
 		            return true;
 		            
-			        case R.id.music:
-			            Intent intent_music = new Intent(this, MusicPlayer.class);
-			            intent_music.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-			            startActivity(intent_music);
+			        case R.id.addExercise:
+			            Intent intent_update = new Intent(this, Add_Database.class);
+			            intent_update.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			            startActivity(intent_update);
 			            return true;
 			        default:
 			            return super.onOptionsItemSelected(item);

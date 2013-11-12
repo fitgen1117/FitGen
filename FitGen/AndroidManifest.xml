@@ -81,6 +81,8 @@
         <activity android:name="com.fxapps.fitgen.MusicPlayer" >
         </activity>
  		<activity android:name=".PlayListActivity" />
+ 		<activity android:name="com.fxapps.fitgen.Add_Database" />
+ 		<activity android:name="com.fxapps.DatabaseMass" />
     </application>
    
 

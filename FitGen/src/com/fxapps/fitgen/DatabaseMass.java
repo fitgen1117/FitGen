@@ -1,5 +1,6 @@
 package com.fxapps.fitgen;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -40,10 +41,8 @@ public class DatabaseMass {
 	static final String colLegRep = "repLegNumber";
 	
 	private DbHelper ourHelper;
+	private DbHelper ourDatabase;
 	private final Context ourContext;
-	private SQLiteDatabase ourDatabase;
-	
-	
 	private static class DbHelper extends SQLiteOpenHelper {
 
 		public DbHelper(Context context){
@@ -71,6 +70,11 @@ public class DatabaseMass {
 			onCreate(db);
 			
 		}
+
+		public long insert(String chesttable, Object object, ContentValues cv) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
 				
 	}
 	
@@ -80,12 +84,21 @@ public class DatabaseMass {
 	
 	public DatabaseMass open(){
 		ourHelper = new DbHelper(ourContext);
-		ourDatabase = ourHelper.getWritableDatabase();
+		ourHelper.getWritableDatabase();
 		return this;
 	}
 	
 	public void close(){
 		ourHelper.close();
+	}
+	
+	public long createEntry(String name, String set, String rep) {
+		ContentValues cv = new ContentValues();
+		cv.put(colChestName, name);
+		cv.put(colChestSet, set);
+		cv.put(colChestRep, rep);
+		return ourDatabase.insert(chestTable, null, cv);
+		
 	}
 }
 		

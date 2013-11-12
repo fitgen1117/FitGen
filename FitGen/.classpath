@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="C:/Users/HP/Android Development/adt-bundle-windows-x86_64-20130219/sdk/extras/android/support/v4/android-support-v4.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path="/google-play-services_lib"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

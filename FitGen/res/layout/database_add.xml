@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+     <TextView
+        android:id="@+id/dbAddHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dbAddHeader"
+        android:gravity="center"
+        android:textSize="30sp" 
+        android:layout_marginTop="48dp"
+        android:textColor="#FFFFFF" />
+    
+
+    <EditText
+        android:id="@+id/SQLName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="48dp"
+        android:inputType="text"
+        android:hint="@string/hintName"
+        
+        />
+
+        <requestFocus />
+        
+       
+        
+    <EditText 
+        android:id="@+id/SQLSet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/hintSet" />
+       
+        
+    <EditText 
+        android:id="@+id/SQLRep"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/hintRep" />
+    
+     
+    <Button 
+        android:text="@string/btn_update"
+        android:id="@+id/btn_update_db"
+       	android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:onClick="PullExisting"
+        android:textColor="@color/blue"
+        android:background="@drawable/button"  />
+      
+    <Button 
+        android:text="@string/view"
+        android:id="@+id/btn_view_update_db"
+       	android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="PullExisting"
+        android:textColor="@color/blue"
+        android:background="@drawable/button" />
+
+
+</LinearLayout>
